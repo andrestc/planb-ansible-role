@@ -1,4 +1,4 @@
-Planb
+Planb ![travis ci](https://travis-ci.org/andrestc/planb-ansible-role.svg?branch=master "Travis CI")
 =====
 
 This role installs the [planb router](https://github.com/tsuru/planb) as a docker
