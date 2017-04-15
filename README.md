@@ -43,9 +43,10 @@ This setup will use a local redis as the slave of a remote redis to guarantee be
 
     - hosts: servers
       roles:
-        - { role: DavidWittman.redis, redis_slaveof: "192.168.50.13 6379"}
+        - { role: DavidWittman.redis, redis_slaveof: "192.168.50.13 6379", redis_slave_priority: 0}
         - { role: andrestc.planb, planb_write_redis_host: "192.168.50.13" }
 
+Here we used `redis_slave_priority: 0` to prevent this slave from becoming a master.
 
 License
 -------
