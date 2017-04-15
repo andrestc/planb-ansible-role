@@ -21,7 +21,7 @@ planb_write_redis_port: 6379
 Dependencies
 ------------
 
-Since planb is ran as a docker container on the host, this role depends on `angstwad.docker_ubuntu` to setup docker.
+Since planb is ran as a docker container on the host, this role depends on [angstwad.docker_ubuntu](https://github.com/angstwad/docker.ubuntu) to setup docker.
 
 Examples
 --------
@@ -37,7 +37,7 @@ This is the most basic way to deploy planb, it will use a remote redis for both 
 
 #### Planb with local read redis
 
-This setup will use a local redis as the slave of a remote redis to guarantee better read performance. I recommend DavidWittman.readis to install the local redis on your server.
+This setup will use a local redis as the slave of a remote redis to guarantee better read performance. I recommend [DavidWittman.redis](https://github.com/DavidWittman/ansible-redis) to install the local redis on your server.
 
     - hosts: servers
       roles:
