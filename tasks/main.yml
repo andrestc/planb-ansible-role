@@ -1,0 +1,11 @@
+---
+
+- name: Start planb container
+  docker_container:
+    name: {{ planb_container_name }}
+    image: {{ planb_image }}
+    command: -l {{ planb_listen_address }} --read-redis-host {{ planb_read_redis_host }} 
+      --read-redis-port {{ planb_read_redis_port }} --write-redis-host {{ planb_write_redis_host }} 
+      --write-redis-port {{ planb_write_redis_port }} --metrics-address {{ planb_metrics_address }}
+    network_mode: host
+

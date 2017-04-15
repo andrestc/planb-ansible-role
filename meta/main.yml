@@ -1,0 +1,25 @@
+galaxy_info:
+  author: André Carvalho
+  description: Role to install Planb router
+  license: MIT
+
+  min_ansible_version: 2.2
+  platforms:
+    - name: Ubuntu
+    versions:
+      - trusty
+      - utopic
+      - vivid
+      - wily
+      - xenial
+      - yakkety
+
+  galaxy_tags:
+    - router
+    - docker
+    - tsuru
+    - planb
+    - hipache
+  
+dependencies: 
+  - { role: angstwad.docker_ubuntu }

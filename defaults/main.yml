@@ -1,0 +1,11 @@
+---
+
+planb_container_name: "planb"
+planb_image: "tsuru/planb"
+
+planb_listen_address: "0.0.0.0:8080"
+planb_metrics_address: "0.0.0.0:8090"
+planb_read_redis_host: "localhost"
+planb_read_redis_port: 6379
+planb_write_redis_host: "localhost"
+planb_write_redis_port: 6379
